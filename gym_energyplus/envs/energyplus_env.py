@@ -309,8 +309,8 @@ if __name__ == '__main__':
     args = parser()
     print('args={}'.format(args))
     
-    lo = 0.0
-    hi = 40.0
+    lo = -1.0 #0.0
+    hi = 1.0 #40.0
     target = 23.0
     
     # obs[0]: Eronment:Site Outdoor Air Drybulb Temperature [C](TimeStep)
@@ -366,4 +366,4 @@ if __name__ == '__main__':
             print('============================= Episodo done. count={} PUEave={} PUEmin={} PUEmax={}'.format(PUE_count, PUE_ave, PUE_min, PUE_max))
             #env.close()
 
-    env.plot()
+    #env.plot()
