@@ -1,6 +1,7 @@
 A customised package for building simulation environment.  
 
 ### Dependences:  
+python version > 3.5  
 gym  
 ```
 gym: $ pip install gym  
