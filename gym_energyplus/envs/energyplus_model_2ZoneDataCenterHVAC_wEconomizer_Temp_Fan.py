@@ -72,10 +72,10 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         
     def setup_spaces(self):
         # Bound action temperature
-        lo = 10.0
-        hi = 40.0
-        flow_hi = 7.0
-        flow_lo = flow_hi * 0.25
+        lo = -1.0 #10.0
+        hi = 1.0 #40.0
+        flow_hi = 1.0 #7.0
+        flow_lo = -1.0 #flow_hi * 0.25
         self.action_space = spaces.Box(low =   np.array([ lo, lo, flow_lo, flow_lo]),
                                        high =  np.array([ hi, hi, flow_hi, flow_hi]),
                                        dtype = np.float32)
