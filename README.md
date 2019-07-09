@@ -6,6 +6,7 @@ gym
 gym: $ pip install gym  
 ```
 EnergyPlus  
+specify environment variables  
 
 ### Installation:  
 git clone this repository and install  
