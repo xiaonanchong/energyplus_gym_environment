@@ -1,19 +1,22 @@
 A customised package for building simulation environment.  
 
-Dependences:  
+### Dependences:  
+gym  
 ```
 gym: $ pip install gym  
 ```
+EnergyPlus  
 
-Installation:  
+### Installation:  
 git clone this repository and install  
 ```
 $ cd gym_energyplus  
 $ pip install -e .
 ```
-Usage:
+### Usage:
 ```
 import gym
+import gym_energyplus
 env = gym.make('gym_energyplus:EnergyPlus-v0')  
 
 observation = env.reset()  
