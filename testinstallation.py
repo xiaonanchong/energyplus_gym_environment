@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 import gym
 import gym_energyplus
