@@ -19,3 +19,4 @@ for i in range(episode_length):
     plt.plot(i+1, observation[3]/r, 'k_')
 plt.legend()
 plt.show()
+plt.save('testfigure')
