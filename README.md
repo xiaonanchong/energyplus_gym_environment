@@ -1,13 +1,13 @@
 A PIP package for building simulation environment. It is build following openai gym interface: https://github.com/openai/gym/blob/master/docs/creating-environments.md   
 
 ### Dependences:  
-##### python  
+#### python  
 version > 3.5  
-##### gym  
+#### gym  
 ```
 gym: $ pip3 install gym  
 ```
-###### EnergyPlus 8.8.0    
+#### EnergyPlus 8.8.0    
 [details on how to install](https://energyplus.net/quickstart#run)
 
 ### Installation (Ubuntu 16.04 / Ubuntu 18.04):  
