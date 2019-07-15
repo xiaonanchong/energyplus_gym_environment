@@ -1,13 +1,12 @@
-A customised package for building simulation environment.  
+A customised package for building simulation environment. following openai gym interface: https://github.com/openai/gym/blob/master/docs/creating-environments.md   
 
 ### Dependences:  
 python version > 3.5  
 gym  
 ```
-gym: $ pip install gym  
+gym: $ pip3 install gym  
 ```
-EnergyPlus  
-specify environment variables  
+EnergyPlus 8.8.0    
 
 ### Installation:  
 git clone this repository and install  
@@ -18,8 +17,8 @@ $ pip install -e .
 ### Usage:
 ```
 import gym
-import gym_energyplus
-env = gym.make('gym_energyplus:EnergyPlus-v0')  
+import gym_datacenter
+env = gym.make('gym_datacenter:datacenter-v0')  
 
 observation = env.reset()  
 action =  env.action_space.sample()   
