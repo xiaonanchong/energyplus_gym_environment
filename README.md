@@ -24,3 +24,11 @@ observation = env.reset()
 action =  env.action_space.sample()   
 observation, reward, done, info = env.step(action)  
 ```
+### env Functions:  
+```
+__init__(self)  
+step(self, action)  
+reset(self)  
+render(self)  
+close(self)  
+```
