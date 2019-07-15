@@ -1,4 +1,4 @@
-A customised package for building simulation environment. following openai gym interface: https://github.com/openai/gym/blob/master/docs/creating-environments.md   
+A PIP package for building simulation environment. following openai gym interface: https://github.com/openai/gym/blob/master/docs/creating-environments.md   
 
 ### Dependences:  
 python version > 3.5  
