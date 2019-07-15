@@ -8,7 +8,7 @@ gym: $ pip3 install gym
 ```
 EnergyPlus 8.8.0    
 
-### Installation:  
+### Installation (Ubuntu 16.04 / Ubuntu 18.04):  
 git clone this repository and install  
 ```
 $ cd gym_energyplus  
