@@ -11,8 +11,7 @@ EnergyPlus 8.8.0
 ### Installation (Ubuntu 16.04 / Ubuntu 18.04):  
 git clone this repository and install  
 ```
-$ cd gym_energyplus  
-$ pip install -e .
+$ pip3 install -e gym_datacenter  
 ```
 ### Usage:
 ```
