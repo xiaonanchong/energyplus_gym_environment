@@ -5,6 +5,6 @@
 from gym.envs.registration import register
 
 register(
-    id='EnergyPlus-v0',
+    id='EnergyPlus-v1',
     entry_point='gym_energyplus.envs:EnergyPlusEnv',
 )
