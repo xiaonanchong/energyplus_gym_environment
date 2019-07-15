@@ -17,7 +17,7 @@ from gym_energyplus.envs.pipe_io import PipeIo
 from gym_energyplus.envs.energyplus_model import EnergyPlusModel
 from gym_energyplus.envs.energyplus_build_model import build_ep_model
 
-class EnergyPlusEnv(Env):
+class DatacenterEnv(Env):
     metadata = {'render.modes': ['human']}
     
     def __init__(self,
