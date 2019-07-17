@@ -13,9 +13,9 @@ import numpy as np
 from scipy.special import expit
 import pandas as pd
 from argparse import ArgumentParser
-from gym_energyplus.envs.pipe_io import PipeIo
-from gym_energyplus.envs.energyplus_model import EnergyPlusModel
-from gym_energyplus.envs.energyplus_build_model import build_ep_model
+from gym_datacenter.envs.pipe_io import PipeIo
+from gym_datacenter.envs.energyplus_model import EnergyPlusModel
+from gym_datacenter.envs.energyplus_build_model import build_ep_model
 
 class DatacenterEnv(Env):
     metadata = {'render.modes': ['human']}
