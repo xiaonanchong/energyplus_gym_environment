@@ -3,7 +3,7 @@
 # This project is licensed under the MIT License, see LICENSE
 
 import os
-from gym_energyplus.envs.Timeout import Timeout
+from gym_datacenter.envs.Timeout import Timeout
 
 class PipeIo():
     
