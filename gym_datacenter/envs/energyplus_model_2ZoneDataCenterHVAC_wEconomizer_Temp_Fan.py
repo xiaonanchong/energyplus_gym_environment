@@ -101,17 +101,23 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         #return self.compute_reward_gaussian1_0_trapezoid0_1_pue0_0_pow0(raw_state)
         #return self.compute_reward_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
         
-    def compute_reward_cxn(self, raw_state = None): # gaussian/trapezoid, PUE
-        return self.compute_reward_common(
-            temperature_center = 23.5,
-            temperature_tolerance = 0.5,
-            temperature_gaussian_weight = 1.0,
-            temperature_gaussian_sharpness = 0.5,
-            temperature_trapezoid_weight = 0.1,
-            fluctuation_weight = 0.0,
-            PUE_weight = 0.0,
-            Whole_Building_Power_weight = 0,
-            raw_state = raw_state)
+    ########################################################
+    ############ self defined reward #######################
+    ########################################################
+    
+    def compute_reward_cxn(self, raw_state = None):
+        T_target = 22
+        
+        st = self.raw_state
+        Tenv = st[0]
+        Tz1 = st[1]
+        Tz2 = st[2]
+        Pb = st[3]
+        Pit = st[4]
+        Phvac = st[5]
+        T_reward = np.exp(np.absolute(T_target - T_z1)) + np.exp(np.absolute(T_target - T_z2))
+        P_reward = 0
+        return T_reward + P_reward
         
     def compute_reward_center23_5_gaussian1_0_trapezoid0_1_pue0_0(self, raw_state = None): # gaussian/trapezoid, PUE
         return self.compute_reward_common(
