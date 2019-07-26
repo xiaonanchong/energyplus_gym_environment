@@ -2,7 +2,7 @@ A PIP package for building simulation environment. It is build following openai 
 
 ### Dependences:  
 #### python  
-version > 3.5  
+version >= 3.5  
 #### EnergyPlus 8.8.0  
 ```
 $ wget https://github.com/NREL/EnergyPlus/archive/v8.8.0.zip    
