@@ -122,7 +122,7 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         Phvac = st[5]
         T_reward = np.exp(np.absolute(T_target - Tz1)) + np.exp(np.absolute(T_target - Tz2))
         P_reward = 0
-        return T_reward + P_reward
+        return T_reward + P_reward, ()
         
     def compute_reward_center23_5_gaussian1_0_trapezoid0_1_pue0_0(self, raw_state = None): # gaussian/trapezoid, PUE
         return self.compute_reward_common(
