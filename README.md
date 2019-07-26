@@ -3,6 +3,18 @@ A PIP package for building simulation environment. It is build following openai 
 ### Dependences:  
 #### python  
 version > 3.5  
+#### EnergyPlus 8.8.0  
+```
+$ wget https://github.com/NREL/EnergyPlus/archive/v8.8.0.zip    
+$ unzip v8.8.0.zip  
+$ cd <WORKING-DIRECTORY>/EnergyPlus  
+$ patch -p1 < ../gym_datacenter/RL-patch-for-EnergyPlus-8-8-0.patch  
+$ mkdir build   
+$ cd build   
+$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/EnergyPlus-8-8-0 ..  
+$ make -j4  
+$ sudo make install  
+```
 #### gym  
 ```
 gym: $ pip3 install gym  
