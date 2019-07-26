@@ -106,6 +106,11 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
     ########################################################
     
     def compute_reward_cxn(self, raw_state = None):
+        if raw_state is not None:
+            st = raw_state
+        else:
+            st = self.raw_state
+        
         T_target = 22
         
         st = self.raw_state
