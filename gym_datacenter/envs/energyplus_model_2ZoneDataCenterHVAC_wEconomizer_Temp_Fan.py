@@ -9,7 +9,7 @@ from scipy.special import expit
 import pandas as pd
 import datetime as dt
 from gym import spaces
-from gym_energyplus.envs.energyplus_model import EnergyPlusModel
+from gym_datacenter.envs.energyplus_model import EnergyPlusModel
 from glob import glob
 from tqdm import tqdm
 import matplotlib.pyplot as plt
