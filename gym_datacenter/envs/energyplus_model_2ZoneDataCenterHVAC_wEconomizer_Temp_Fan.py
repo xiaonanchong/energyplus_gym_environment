@@ -120,7 +120,7 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         Pb = st[3]
         Pit = st[4]
         Phvac = st[5]
-        T_reward = np.exp(np.absolute(T_target - Tz1)) + np.exp(np.absolute(T_target - Tz2))
+        T_reward = -np.exp(np.absolute(T_target - Tz1)) - np.exp(np.absolute(T_target - Tz2))
         P_reward = 0
         return T_reward + P_reward, ()
         
