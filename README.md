@@ -61,7 +61,10 @@ export ENERGYPLUS_MODEL="${MODEL_DIR}/2ZoneDataCenterHVAC_wEconomizer_Temp_Fan.i
 ```
 gym: $ pip3 install gym  
 ```
-
+#### other packages
+pip3 install tensorflow
+pip3 install troch
+pip3 install pandas
 
 ### Installation (Ubuntu 16.04 / Ubuntu 18.04):  
 git clone this repository and install  
