@@ -94,7 +94,7 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         return rew
 
     def _compute_reward(self, raw_state = None):
-        return self.compute_reward_cxn1(raw_state)
+        return self.compute_reward_cxn_1(raw_state)
         #return self.compute_reward_center23_5_gaussian1_0_trapezoid0_1_pue0_0(raw_state)
         #return self.compute_reward_center23_5_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
         #return self.compute_reward_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
