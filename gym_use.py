@@ -13,4 +13,4 @@ for i in range(4):
   print('St+1')
   print(observation)
   
-env.close()
+#env.close()
