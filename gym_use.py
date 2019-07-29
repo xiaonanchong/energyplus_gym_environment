@@ -7,7 +7,7 @@ for i in range(2):
   observation = env.reset()  
   print('St:')
   print(observation)
-  action =  env.action_space.sample()  
+  action =  np.array([-0.5, -0.5, 1, 1])  
   print('At:')
   print(action)
   observation, reward, done, info = env.step(action) 
