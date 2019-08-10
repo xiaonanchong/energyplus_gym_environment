@@ -3482,23 +3482,23 @@
     ENDIF;
 
 
-  EnergyManagementSystem:Program,
-    ExtCtrlBasedSetpointManager,                !- Name
-    SET tmp_val1 = @ExtCtrlObs 1 OutdoorTemp,
-    SET tmp_val1 = @ExtCtrlObs 2 WestZoneTemp,
-    SET tmp_val1 = @ExtCtrlObs 3 EastZoneTemp,
-    SET tmp_val1 = @ExtCtrlObs 4 Whole_Building_Power,
-    SET tmp_val1 = @ExtCtrlObs 5 IT_Equip_Power,
-    SET tmp_val1 = @ExtCtrlObs 6 Whole_HVAC_Power,
-    SET tmp_val1 = @ExtCtrlAct 0 6,
+ ! EnergyManagementSystem:Program,
+ !   ExtCtrlBasedSetpointManager,                !- Name
+ !   SET tmp_val1 = @ExtCtrlObs 1 OutdoorTemp,
+ !   SET tmp_val1 = @ExtCtrlObs 2 WestZoneTemp,
+ !   SET tmp_val1 = @ExtCtrlObs 3 EastZoneTemp,
+ !   SET tmp_val1 = @ExtCtrlObs 4 Whole_Building_Power,
+ !   SET tmp_val1 = @ExtCtrlObs 5 IT_Equip_Power,
+ !   SET tmp_val1 = @ExtCtrlObs 6 Whole_HVAC_Power,
+ !   SET tmp_val1 = @ExtCtrlAct 0 6,
 
-    SET WestZoneDECOutletNode_setpoint = @ExtCtrlAct 1,
-    SET WestZoneIECOutletNode_setpoint = @ExtCtrlAct 1,
-    SET WestZoneCCoilAirOutletNode_setpoint = @ExtCtrlAct 1,
-    SET WestAirLoopOutletNode_setpoint = @ExtCtrlAct 1,
-    SET EastZoneDECOutletNode_setpoint = @ExtCtrlAct 2,
-    SET EastZoneIECOutletNode_setpoint = @ExtCtrlAct 2,
-    SET EastZoneCCoilAirOutletNode_setpoint = @ExtCtrlAct 2,
-    SET EastAirLoopOutletNode_setpoint = @ExtCtrlAct 2,
-    SET WestZoneSupplyFan_FanAirMassFlowRate = @ExtCtrlAct 3,
-    SET EastZoneSupplyFan_FanAirMassFlowRate = @ExtCtrlAct 4;
+ !   SET WestZoneDECOutletNode_setpoint = @ExtCtrlAct 1,
+ !   SET WestZoneIECOutletNode_setpoint = @ExtCtrlAct 1,
+ !   SET WestZoneCCoilAirOutletNode_setpoint = @ExtCtrlAct 1,
+ !   SET WestAirLoopOutletNode_setpoint = @ExtCtrlAct 1,
+ !   SET EastZoneDECOutletNode_setpoint = @ExtCtrlAct 2,
+ !   SET EastZoneIECOutletNode_setpoint = @ExtCtrlAct 2,
+ !   SET EastZoneCCoilAirOutletNode_setpoint = @ExtCtrlAct 2,
+ !   SET EastAirLoopOutletNode_setpoint = @ExtCtrlAct 2,
+ !   SET WestZoneSupplyFan_FanAirMassFlowRate = @ExtCtrlAct 3,
+ !   SET EastZoneSupplyFan_FanAirMassFlowRate = @ExtCtrlAct 4;
