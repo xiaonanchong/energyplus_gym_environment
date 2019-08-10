@@ -200,6 +200,11 @@ class DatacenterEnv(Env):
         raw_state, done = self.receive_observation() # raw_state will be None for for call at total_timestep + 1
         self.ep_model.set_raw_state(raw_state)
         observation = self.ep_model.get_state()
+        ######## cxn ########
+        observation[3] = observation[3]/1000
+        observation[4] = observation[4]/1000
+        observation[5] = observation[5]/1000
+        ######## cxn ########
         reward = self.ep_model.compute_reward()
 
         if done:
