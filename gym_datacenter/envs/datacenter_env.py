@@ -204,6 +204,7 @@ class DatacenterEnv(Env):
         observation[3] = observation[3]/1000
         observation[4] = observation[4]/1000
         observation[5] = observation[5]/1000
+        np.delete(observation, 3)
         ######## cxn ########
         reward = self.ep_model.compute_reward()
 
