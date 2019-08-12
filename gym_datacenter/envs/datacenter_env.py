@@ -204,7 +204,7 @@ class DatacenterEnv(Env):
         observation[3] = observation[3]/1000
         observation[4] = observation[4]/1000
         observation[5] = observation[5]/1000
-        np.delete(observation, 3)
+        observation = np.delete(observation, 3)
         print('observation in datacenter_env.py:')
         print(observation)
         ######## cxn ########
