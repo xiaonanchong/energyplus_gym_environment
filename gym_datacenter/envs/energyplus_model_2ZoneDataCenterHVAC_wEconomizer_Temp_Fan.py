@@ -79,8 +79,13 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         self.action_space = spaces.Box(low =   np.array([ lo, lo, flow_lo, flow_lo]),
                                        high =  np.array([ hi, hi, flow_hi, flow_hi]),
                                        dtype = np.float32)
+        '''
         self.observation_space = spaces.Box(low =   np.array([-20.0, -20.0, -20.0,          0.0,          0.0,          0.0]),
                                             high =  np.array([ 50.0,  50.0,  50.0, 1000000000.0, 1000000000.0, 1000000000.0]),
+                                            dtype = np.float32)
+        '''
+        self.observation_space = spaces.Box(low =   np.array([-20.0, -20.0, -20.0,          0.0,          0.0]),
+                                            high =  np.array([ 50.0,  50.0,  50.0, 1000000000.0, 1000000000.0]),
                                             dtype = np.float32)
         
     def set_raw_state(self, raw_state):
@@ -95,8 +100,8 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
 
     def _compute_reward(self, raw_state = None):
         #return self.compute_reward_cxn_1(raw_state)
-        return self.compute_reward_center23_5_gaussian1_0_trapezoid0_1_pue0_0(raw_state)
-        #return self.compute_reward_center23_5_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
+        #return self.compute_reward_center23_5_gaussian1_0_trapezoid0_1_pue0_0(raw_state)###
+        return self.compute_reward_center23_5_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
         #return self.compute_reward_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
         #return self.compute_reward_gaussian1_0_trapezoid0_1_pue0_0_pow0(raw_state)
         #return self.compute_reward_gaussian1_0_trapezoid1_0_pue0_0(raw_state)
