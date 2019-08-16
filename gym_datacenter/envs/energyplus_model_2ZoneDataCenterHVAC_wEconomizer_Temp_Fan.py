@@ -25,7 +25,7 @@ class EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan(EnergyPlusModel):
         super(EnergyPlusModel2ZoneDataCenterHVAC_wEconomizer_Temp_Fan, self).__init__(model_file, log_dir, verbose)
         self.reward_low_limit = -10000.
         self.axepisode = None
-        self.num_axes = 5
+        self.num_axes = 6
         self.text_power_consumption = []
 
         self.electric_powers = [
